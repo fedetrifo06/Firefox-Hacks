@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "BetterC0ggle",
+    "version": "0.1",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["*://coggle.it/*"],
+  
+    "description": "Some hacks for c0ggle.it website.",
+  
+    "icons": {
+      "48": "icon.png"
+    },
+  
+    "content_scripts": [
+        {
+        "matches": ["*://coggle.it/*"],
+        "js": ["main.js"]
+        }
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "betterc0ggle@fedetrifo06.github.io"
+        }
+    }
+  }
